@@ -32,73 +32,28 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global cloud data warehousing and analytical compute market was estimated at approximately $7.5B–$13.3B (2024–2025) and is projected to expand at a CAGR of 22%–26%, driven by migrations from legacy monolithic appliances to decoupled lakehouse architectures. The sector features an oligopolistic, highly concentrated tier at the top where hyperscalers (AWS, Google Cloud, Microsoft) and specialized platform leaders (Snowflake, Databricks) capture roughly 68%+ of aggregate revenue, while remaining moderately fragmented across an active long-tail of high-performance OLAP engines (ClickHouse, Firebolt) and federated query fabrics (Starburst, Dremio).
 
 ## SaaS/Hosted Platforms
 
-
-
-- **Snowflake Virtual Warehouses**
-
-  **Independent compute clusters** that share no resources. **Pricing**: **Standard ~$2.00/credit**, **Enterprise ~$3.00**, **Business Critical ~$4.00** (AWS US East on-demand); credits bill **per second with a 60-second minimum**; suspended warehouses cost nothing . Warehouse sizes double credits/hour: **X-Small = 1 credit/hour (~$8/hour at Standard)**, **Medium = 4 credits/hour**, **Large = 8 credits/hour (~$16/hour)** . **Free tier**: Trial credits. **Best for**: teams wanting strict workload isolation with per-second billing—**trade-off**: oversizing is the most expensive mistake; an X-Large costs 4× a Medium for the same schedule .
-
-
-
-- **Amazon Redshift Concurrency Scaling**
-
-  **Automatic compute scaling** for concurrent queries. **Pricing**: **Each cluster earns up to 1 hour of free Concurrency Scaling credits per day**—sufficient for the concurrency needs of **97% of Redshift customers** . Additional scaling billed per second when clusters are in use. **Free tier**: 1 hour/day per cluster. **Best for**: teams with unpredictable concurrency spikes wanting automatic scaling without manual intervention—**trade-off**: sustained high concurrency beyond free credits incurs costs.
-
-
-
-- **Databricks SQL Serverless**
-
-  **Fully managed, elastic serverless SQL warehouse**. **Pricing**: **$0.70/DBU** including cloud instance cost . Billed as Serverless SQL Compute. **Free tier**: Community Edition limited. **Best for**: teams wanting Databricks SQL without cluster management—**trade-off**: DBU consumption scales with query complexity and concurrency.
-
-
-
-- **Google BigQuery Slots**
-
-  **Compute capacity units** for BigQuery. **Pricing**: **Standard Edition $0.04/slot-hour** (US); **Enterprise Edition $0.06/slot-hour** with CMEK, BI Engine, and commitment discounts; **Enterprise Plus** adds cross-region DR and 99.999% SLA . **Break-even**: consistent consumption above **50 slots** justifies Editions over on-demand . **Free tier**: 1 TB queries/month on-demand. **Best for**: teams wanting autoscaling compute with predictable slot-hour pricing—**trade-off**: Editions require capacity modeling; idle slot baselines inflate bills silently.
-
-
-
-- **Firebolt Engines**
-
-  **Elastic query engines** with per-second billing. **Pricing**: **$200 free credits** (30 days); compute billed **per second**; scale to zero when idle; storage pass-through at object storage rates . **Free tier**: $200 credits. **Best for**: teams wanting sub-second analytics with true scale-to-zero—**trade-off**: storage costs continue even when engines are stopped.
-
-
-
-- **Starburst Galaxy Clusters**
-
-  **Managed Trino clusters** with elastic scaling. **Pricing**: **Free tier: 3 clusters forever**; **Pro $0.50/credit**; **Enterprise $0.75/credit** . **30-day trial with $500 credits** includes Warp Speed and fault-tolerant clusters . **Free tier**: Yes, 3 clusters. **Best for**: teams wanting managed Trino without cluster operations—**trade-off**: credit consumption scales with query volume and cluster size.
-
-
-
-- **ClickHouse Cloud Clusters**
-
-  **Managed ClickHouse** with elastic compute. **Pricing**: **Basic $0.2181/compute unit/hour**; **Scale $0.2985**; **Enterprise $0.3903** . **1 compute unit = 8 GiB RAM + 2 vCPU**, billed per minute . **Free tier**: Trial credits. **Best for**: teams wanting ClickHouse performance without cluster management—**trade-off**: compute unit pricing requires sizing modeling.
-
-
-
-- **Dremio Engines**
-
-  **Elastic query engines** for lakehouse analytics. **Pricing**: **Consumption-based** for both self-managed and cloud; **30-day trial** (self-managed) or **$400 credit for 30 days** (cloud) . **Features**: Engine auto-start/stop; engine replica scaling (cloud only) . **Free tier**: Trial/credits. **Best for**: teams wanting Iceberg-native query engines with elastic scaling—**trade-off**: enterprise features gated; self-managed requires Kubernetes.
-
-
-
-- **Presto on AWS / Trino Cloud**
-
-  **Self-managed or managed Trino/Presto** on cloud infrastructure. **Pricing**: Infrastructure costs (EC2, EMR) + operational overhead; managed options via Starburst Galaxy or cloud providers. **Free tier**: None for managed. **Best for**: teams wanting full control over Trino deployment—**trade-off**: operational burden of cluster management.
-
-
+| Platform | Company Valuation / Revenue | Starting Tier Pricing | Free Tier / Trial Limits | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **Amazon Redshift Concurrency Scaling** | ~$2.48T Market Cap (Amazon) / ~$600B+ Rev | **$0.543/hour** (billed per second matching primary node rates, e.g., `ra3.large` on-demand; Serverless from **$0.375/RPU-hour** / $1.50/hr minimum 4-RPU base) | **1 hour free scaling/day per active cluster** (accumulates up to 30 hours); Redshift Serverless offers **90-day trial with $300 credits** (or 2-month 750 hrs/month `dc2.large` provisioned trial) | Automatic compute scaling for concurrent queries with decoupled compute isolation. |
+| **Google BigQuery Slots** | ~$2.32T Market Cap (Alphabet) / ~$350B+ Rev | **$0.04/slot-hour** (Standard Edition, US multiregion, autoscale baselines) or **$6.25 per TB** scanned on on-demand | **1 TB of query data processed per month forever free**; Google Cloud free trial grants **$300 credits for 90 days** | Autoscaling query compute units with decoupled storage-compute isolation and commitment discounts. |
+| **Databricks SQL Serverless** | ~$134B Valuation / ~$4.8B+ ARR (Dec 2025) | **$0.70/DBU** (Serverless SQL Compute, inclusive of cloud infrastructure costs; 2X-Small warehouse consumes ~1 DBU/hr) | **14-day free trial with up to $400 in usage credits** (plus forever-free restricted Databricks Free Edition for personal non-commercial learning) | Fully managed elastic lakehouse SQL engine on serverless infrastructure with near-instant spin-up. |
+| **Snowflake Virtual Warehouses** | ~$75B Market Cap / ~$3.63B Rev (FY2025) | **$2.00/credit** (Standard Edition AWS US East, billed per second with 60s minimum; X-Small = 1 credit/hour = **$2.00/hour**) | **30-day free trial with $400 usage credits** (no credit card required for standard signup) | Independent virtual warehouse clusters with strict workload isolation and per-second autosuspension/resumption. |
+| **Starburst Galaxy Clusters** | ~$3.35B Valuation / ~$100M+ ARR | **$0.50/credit** (Pro Tier; cluster costs scale per credit hour based on coordinator/worker sizing) | **3 clusters forever free**; includes **30-day free trial with $500 usage credits** (access to Warp Speed and fault-tolerant execution) | Fully managed, production-grade Trino clusters with autoscaling and cross-cloud federated query capability. |
+| **ClickHouse Cloud Clusters** | ~$2.00B Valuation (Series B) / VC-backed | **$0.2181/compute unit/hour** (Basic tier; 1 Compute Unit = 2 vCPU + 8 GiB RAM, billed per minute; ~$0.22/hour) | **30-day free trial with $300 usage credits** (no forever-free tier; automatically lapses unless converted to paid) | Serverless ClickHouse deployment with shared-nothing speed, scale-to-zero compute, and decoupled cloud object storage. |
+| **Dremio Engines** | ~$2.00B Valuation (Series E) / VC-backed | **$0.20/DCU-hour** (Dremio Cloud pay-as-you-go; Extra Small engine consumes 32 DCUs/hr = **$6.40/hour**) | **30-day free trial with $400 usage credits** on Dremio Cloud (plus forever-free Community Edition for self-managed Kubernetes/Docker) | Apache Iceberg-native query engines for lakehouse analytics with engine auto-start/stop and replica scaling. |
+| **Firebolt Engines** | ~$1.40B Valuation (Series C) / VC-backed | **$0.92/hour** (Small compute-optimized engine running 4 FBUs/hr; compute billed per second, pass-through S3 storage) | **30-day free trial with $200 usage credits** (scale-to-zero compute supported on trial) | Sub-second real-time analytics data warehouse with isolated multi-engine compute and scale-to-zero pricing. |
 
 ## Open-Source GitHub Projects
 
