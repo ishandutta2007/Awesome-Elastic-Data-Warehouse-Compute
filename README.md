@@ -66,63 +66,63 @@ A detailed price-performance comparison of commercial and hosted elastic compute
 
 Self-hosted, distributed MPP and columnar engines capable of elastic scaling when orchestrated with Kubernetes, container auto-scalers, or cloud instance groups.
 
-> **Sorted descending by GitHub Star Count** ⭐ (Badges link directly to stargazers):
+> **Sorted descending by GitHub Stars_Count** ⭐ (Badges link directly to stargazers):
 
-### 1. [ClickHouse](https://github.com/ClickHouse/ClickHouse) [![GitHub stars](https://img.shields.io/github/stars/ClickHouse/ClickHouse?style=social&color=white)](https://github.com/ClickHouse/ClickHouse/stargazers)
+### 1. [ClickHouse](https://github.com/ClickHouse/ClickHouse) [![GitHub_Stars](https://img.shields.io/github/stars/ClickHouse/ClickHouse?style=social&color=white)](https://github.com/ClickHouse/ClickHouse/stargazers)
 - **Description**: Column-oriented database management system for real-time analytical reporting (OLAP). Scales horizontally with shared-nothing or decoupled cloud-native architectures.
 - **Key Features**: Vectorized execution, MergeTree storage engine family, replication and sharding, multi-node scaling on Kubernetes via ClickHouse Operator.
 - **Tech Stack**: C++ (Apache-2.0 License).
 - **Elasticity Profile**: Worker pods scale horizontally across node pools; ClickHouse Cloud provides true compute-storage separation.
 
-### 2. [DuckDB](https://github.com/duckdb/duckdb) [![GitHub stars](https://img.shields.io/github/stars/duckdb/duckdb?style=social&color=white)](https://github.com/duckdb/duckdb/stargazers)
+### 2. [DuckDB](https://github.com/duckdb/duckdb) [![GitHub_Stars](https://img.shields.io/github/stars/duckdb/duckdb?style=social&color=white)](https://github.com/duckdb/duckdb/stargazers)
 - **Description**: High-performance in-process analytical SQL database management system. Often referred to as the "SQLite for Analytics", running serverlessly in ephemeral compute containers or Lambdas.
 - **Key Features**: Zero external dependencies, vectorized columnar query execution engine, native Parquet/Arrow/CSV streaming, direct querying over S3 object stores.
 - **Tech Stack**: C++ (MIT License).
 - **Elasticity Profile**: Employs an ultra-lightweight footprint suitable for scale-to-zero serverless lambdas and ephemeral batch workers.
 
-### 3. [Presto](https://github.com/prestodb/presto) [![GitHub stars](https://img.shields.io/github/stars/prestodb/presto?style=social&color=white)](https://github.com/prestodb/presto/stargazers)
+### 3. [Presto](https://github.com/prestodb/presto) [![GitHub_Stars](https://img.shields.io/github/stars/prestodb/presto?style=social&color=white)](https://github.com/prestodb/presto/stargazers)
 - **Description**: Distributed SQL query engine designed for running interactive analytical queries against data sources of all sizes ranging from gigabytes to petabytes.
 - **Key Features**: ANSI SQL compliance, connector architecture (Hive, Iceberg, Hudi, Cassandra, Kafka), multi-tenant coordinator-worker model, native Presto C++ (Velox) integration.
 - **Tech Stack**: Java, C++ (Apache-2.0 License / Linux Foundation).
 - **Elasticity Profile**: Worker pools scale elastically on Amazon EMR, Kubernetes, or self-hosted autoscaling clusters.
 
-### 4. [Trino](https://github.com/trinodb/trino) [![GitHub stars](https://img.shields.io/github/stars/trinodb/trino?style=social&color=white)](https://github.com/trinodb/trino/stargazers)
+### 4. [Trino](https://github.com/trinodb/trino) [![GitHub_Stars](https://img.shields.io/github/stars/trinodb/trino?style=social&color=white)](https://github.com/trinodb/trino/stargazers)
 - **Description**: Fast distributed SQL query engine for big data analytics that queries data where it lives without data movement (formerly PrestoSQL).
 - **Key Features**: High-performance federated querying across object stores (S3, GCS, Azure Blob, MinIO), lakehouses (Iceberg, Delta Lake, Hudi), and RDBMS engines; native dynamic autoscaling on Kubernetes.
 - **Tech Stack**: Java (Apache-2.0 License).
 - **Elasticity Profile**: Decoupled compute cluster with horizontal autoscaling worker nodes, spot instance resilience, and Starburst Galaxy managed enterprise options.
 
-### 5. [Apache Druid](https://github.com/apache/druid) [![GitHub stars](https://img.shields.io/github/stars/apache/druid?style=social&color=white)](https://github.com/apache/druid/stargazers)
+### 5. [Apache Druid](https://github.com/apache/druid) [![GitHub_Stars](https://img.shields.io/github/stars/apache/druid?style=social&color=white)](https://github.com/apache/druid/stargazers)
 - **Description**: High-performance, real-time analytics database designed for fast streaming ingestion and sub-second ad-hoc OLAP queries on event-driven data.
 - **Key Features**: Multi-stage distributed architecture separating MiddleManager (ingestion), Historical (storage/caching), and Broker (query parsing/fan-out) processes; deep storage decoupling on S3/HDFS.
 - **Tech Stack**: Java (Apache-2.0 License).
 - **Elasticity Profile**: Historical and MiddleManager tiers scale independently and elastically depending on ingestion pressure and query concurrency.
 
-### 6. [Apache Doris](https://github.com/apache/doris) [![GitHub stars](https://img.shields.io/github/stars/apache/doris?style=social&color=white)](https://github.com/apache/doris/stargazers)
+### 6. [Apache Doris](https://github.com/apache/doris) [![GitHub_Stars](https://img.shields.io/github/stars/apache/doris?style=social&color=white)](https://github.com/apache/doris/stargazers)
 - **Description**: Easy-to-use, high-performance MPP analytical database for real-time reporting, ad-hoc analysis, and unified lakehouse queries.
 - **Key Features**: Fully decoupled storage-and-compute architecture (Compute Nodes / Storage Engine), ANSI SQL compliance, sub-second latency for 10,000+ QPS, native MySQL wire protocol support.
 - **Tech Stack**: C++, Java (Apache-2.0 License).
 - **Elasticity Profile**: Stateless Compute Nodes (CN) scale up and down dynamically without data migration, reading persistent shared data directly from object stores.
 
-### 7. [StarRocks](https://github.com/StarRocks/starrocks) [![GitHub stars](https://img.shields.io/github/stars/StarRocks/starrocks?style=social&color=white)](https://github.com/StarRocks/starrocks/stargazers)
+### 7. [StarRocks](https://github.com/StarRocks/starrocks) [![GitHub_Stars](https://img.shields.io/github/stars/StarRocks/starrocks?style=social&color=white)](https://github.com/StarRocks/starrocks/stargazers)
 - **Description**: Next-generation sub-second MPP database system built for multi-table join acceleration and lakehouse query analytics.
 - **Key Features**: Shared-data architecture, decoupled compute nodes (CN) with local NVMe caching, Multi-Catalog support for Apache Iceberg / Apache Hudi / Delta Lake, asynchronous materialized views.
 - **Tech Stack**: C++, Java (Apache-2.0 License / Linux Foundation).
 - **Elasticity Profile**: Elastic Compute Nodes can be spun up or scaled down in seconds based on query demand without storage reshuffling.
 
-### 8. [Apache DataFusion](https://github.com/apache/datafusion) [![GitHub stars](https://img.shields.io/github/stars/apache/datafusion?style=social&color=white)](https://github.com/apache/datafusion/stargazers)
+### 8. [Apache DataFusion](https://github.com/apache/datafusion) [![GitHub_Stars](https://img.shields.io/github/stars/apache/datafusion?style=social&color=white)](https://github.com/apache/datafusion/stargazers)
 - **Description**: Extensible, blazingly fast distributed SQL query engine and computing toolkit written in Rust, powered by Apache Arrow.
 - **Key Features**: Modular vectorized execution engine, native SIMD operations, memory safety without garbage collection pauses, foundational engine for modern distributed query stacks.
 - **Tech Stack**: Rust (Apache-2.0 License).
 - **Elasticity Profile**: Extremely light CPU and memory overhead; spins up instantly in ephemeral serverless workloads and containerized micro-engines.
 
-### 9. [Velox](https://github.com/facebookincubator/velox) [![GitHub stars](https://img.shields.io/github/stars/facebookincubator/velox?style=social&color=white)](https://github.com/facebookincubator/velox/stargazers)
+### 9. [Velox](https://github.com/facebookincubator/velox) [![GitHub_Stars](https://img.shields.io/github/stars/facebookincubator/velox?style=social&color=white)](https://github.com/facebookincubator/velox/stargazers)
 - **Description**: High-performance C++ vectorized database acceleration library designed to unify and accelerate execution engines including Presto C++ and Apache Spark (Gluten).
 - **Key Features**: Arrow-compatible in-memory columnar processing, vectorized expression evaluation, optimized memory pooling, reusable composable execution pipeline.
 - **Tech Stack**: C++ (Apache-2.0 License).
 - **Elasticity Profile**: Embeddable acceleration layer that inherits the dynamic scaling elasticity of the hosting distributed framework.
 
-### 10. [Apache Pinot](https://github.com/apache/pinot) [![GitHub stars](https://img.shields.io/github/stars/apache/pinot?style=social&color=white)](https://github.com/apache/pinot/stargazers)
+### 10. [Apache Pinot](https://github.com/apache/pinot) [![GitHub_Stars](https://img.shields.io/github/stars/apache/pinot?style=social&color=white)](https://github.com/apache/pinot/stargazers)
 - **Description**: Real-time distributed OLAP datastore purpose-built to execute low-latency analytical queries at ultra-high concurrency (e.g., LinkedIn and Uber user-facing analytics).
 - **Key Features**: Columnar storage with pluggable indices (Star-Tree, inverted, range), real-time stream ingestion from Kafka/Kinesis, distributed broker-server architecture.
 - **Tech Stack**: Java (Apache-2.0 License).
@@ -143,7 +143,7 @@ Contributions are warmly welcomed! Help keep this awesome repository up-to-date 
 1. 🍴 **Fork the repository** on GitHub.
 2. 🌿 **Create a new branch** (`git checkout -b feature/new-engine-addition`).
 3. 📝 **Add or update an entry** in `README.md`:
-   - Follow the established formatting conventions (include name, category, GitHub link, star count badge, starting price, free tier limit, and elasticity profile).
+   - Follow the established formatting conventions (include name, category, GitHub link, Stars_Count badge, starting price, free tier limit, and elasticity profile).
    - Ensure descriptions are strictly factual and concise.
 4. 🚀 **Submit a Pull Request** with a brief summary of the addition or update.
 
