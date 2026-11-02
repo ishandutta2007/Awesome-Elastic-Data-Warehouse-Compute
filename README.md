@@ -1,48 +1,53 @@
 # Awesome-Elastic-Data-Warehouse-Compute
 
-# Awesome-Elastic-Data-Warehouse-Compute
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Elastic Data Warehouse Compute Banner" width="100%" />
+</p>
 
-**Top Elastic Data Warehouse Compute (Opensource) 🌟 Star if you like it! 🌟**
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awssome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Elastic-Data-Warehouse-Compute/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Elastic-Data-Warehouse-Compute?style=social" alt="Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Elastic-Data-Warehouse-Compute/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Elastic-Data-Warehouse-Compute?style=social" alt="Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Elastic-Data-Warehouse-Compute/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache--2.0-blue.svg?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+---
 
+## 🚀 Overview & Architecture
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**
+> **A curated, comprehensive landscape of Elastic Data Warehouse Compute platforms, Distributed SQL query engines, and Cloud-Native OLAP architectures.** 🌟 *Star the repo if you find it helpful!* 🌟
 
-*Focused on Virtual Warehouses, Concurrency Scaling, Serverless Compute & Self-Hosted Elastic Engines*
+Modern analytical architectures have decisively evolved beyond rigid monolithic databases into **elastic, decoupled systems**. By separating storage from compute, organizations can scale processing power on-demand, execute high-concurrency analytical queries, isolate independent business workloads, and reduce infrastructure spend by paying only for active query execution.
 
-**Last updated: November 2026**
+This directory tracks the foremost **SaaS managed data warehouse solutions** (featuring autoscaling, per-second billing, and serverless clusters) and **Open-Source distributed query engines & analytical DBMS** (production-proven on Kubernetes and cloud object stores like Amazon S3, Google Cloud Storage, and Apache Iceberg/Delta Lake).
 
+---
 
+## 📑 Table of Contents
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Elastic Data Warehouse Compute**. These tools enable organizations to scale analytical compute elastically—decoupling storage from processing power, isolating workloads, and paying only for what they use—from fully managed virtual warehouses with per-second billing to open-source engines that can be deployed on elastic infrastructure.
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Elastic Platforms](#️-saas--hosted-elastic-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [📈 Star History](#-star-history)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⚖️ Disclaimer](#️-disclaimer)
 
+---
 
+## 📊 Sector Overview & Market Dynamics
 
-**Examples** include Snowflake Virtual Warehouses, Amazon Redshift Concurrency Scaling, Databricks SQL Serverless, Google BigQuery Slots, Firebolt Engines, Starburst Galaxy Clusters, ClickHouse Clusters, Dremio Engines, Presto on AWS, and Trino Cloud (the category leaders in commercial and open-source space).
+The global cloud data warehousing and analytical compute market was estimated at approximately **$7.5B–$13.3B (2024–2025)** and is projected to expand at a **CAGR of 22%–26%**, driven by enterprise-wide migrations from legacy on-premise appliances to elastic, decoupled lakehouse architectures. 
 
+The sector exhibits an **oligopolistic, highly concentrated structure** at the top: major hyperscalers (**AWS Redshift**, **Google Cloud BigQuery**, **Microsoft Fabric**) and specialized independent giants (**Snowflake**, **Databricks**) capture roughly **68%+ of aggregate industry revenue**. Concurrently, the landscape remains **vibrantly fragmented** across an active ecosystem of specialized high-performance OLAP engines (**ClickHouse**, **Firebolt**) and open federated query acceleration engines (**Trino**, **Dremio**, **StarRocks**), delivering specialized price-performance trade-offs for high-throughput, real-time analytics.
 
+---
 
-**Open-source emphasis**: This section is expanded with every relevant project for self-hosted elastic compute, MPP engines, and open query infrastructure. **Critical note**: True open-source elastic compute is achieved through the engines themselves—**Trino**, **ClickHouse**, and **Apache Doris** all support elastic scaling when deployed on Kubernetes or cloud infrastructure. The elasticity is an infrastructure concern, not a feature of the engine binary. No open-source project provides the fully managed per-second billing of Snowflake or BigQuery, but for teams willing to operate clusters, the engines are production-proven.
+## ☁️ SaaS & Hosted Elastic Platforms
 
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## Sector Overview & Market Dynamics
-
-The global cloud data warehousing and analytical compute market was estimated at approximately $7.5B–$13.3B (2024–2025) and is projected to expand at a CAGR of 22%–26%, driven by migrations from legacy monolithic appliances to decoupled lakehouse architectures. The sector features an oligopolistic, highly concentrated tier at the top where hyperscalers (AWS, Google Cloud, Microsoft) and specialized platform leaders (Snowflake, Databricks) capture roughly 68%+ of aggregate revenue, while remaining moderately fragmented across an active long-tail of high-performance OLAP engines (ClickHouse, Firebolt) and federated query fabrics (Starburst, Dremio).
-
-## SaaS/Hosted Platforms
+A detailed price-performance comparison of commercial and hosted elastic compute engines. Platforms are sorted descending by company scale (market capitalization / valuation):
 
 | Platform | Company Valuation / Revenue | Starting Tier Pricing | Free Tier / Trial Limits | Description |
 | :--- | :--- | :--- | :--- | :--- |
@@ -55,102 +60,121 @@ The global cloud data warehousing and analytical compute market was estimated at
 | **Dremio Engines** | ~$2.00B Valuation (Series E) / VC-backed | **$0.20/DCU-hour** (Dremio Cloud pay-as-you-go; Extra Small engine consumes 32 DCUs/hr = **$6.40/hour**) | **30-day free trial with $400 usage credits** on Dremio Cloud (plus forever-free Community Edition for self-managed Kubernetes/Docker) | Apache Iceberg-native query engines for lakehouse analytics with engine auto-start/stop and replica scaling. |
 | **Firebolt Engines** | ~$1.40B Valuation (Series C) / VC-backed | **$0.92/hour** (Small compute-optimized engine running 4 FBUs/hr; compute billed per second, pass-through S3 storage) | **30-day free trial with $200 usage credits** (scale-to-zero compute supported on trial) | Sub-second real-time analytics data warehouse with isolated multi-engine compute and scale-to-zero pricing. |
 
-## Open-Source GitHub Projects
+---
 
+## 🔓 Open-Source GitHub Projects
 
+Self-hosted, distributed MPP and columnar engines capable of elastic scaling when orchestrated with Kubernetes, container auto-scalers, or cloud instance groups.
 
-- **Trino**
+> **Sorted descending by GitHub Star Count** ⭐ (Badges link directly to stargazers):
 
-  **Distributed SQL query engine** (Apache 2.0) — **the standard for elastic federated query**, scalable to thousands of nodes when deployed on Kubernetes or cloud infrastructure. **Features**: **ANSI SQL**; **federation** across S3, Hive, Cassandra, MySQL, and more; **highly parallel distributed execution**; works with BI tools including Tableau, Power BI, and Superset; **Kubernetes-native** deployment for elastic scaling. **Tech stack**: Java. **Deploy**: Self-hosted (Kubernetes, Docker) or Starburst Galaxy. **Trade-off**: **Elasticity is an infrastructure concern**—you scale the cluster, not the engine itself. **Best for**: organizations needing federated queries across disparate sources with the ability to scale compute elastically on Kubernetes.
+### 1. [ClickHouse](https://github.com/ClickHouse/ClickHouse) [![GitHub stars](https://img.shields.io/github/stars/ClickHouse/ClickHouse?style=social&color=white)](https://github.com/ClickHouse/ClickHouse/stargazers)
+- **Description**: Column-oriented database management system for real-time analytical reporting (OLAP). Scales horizontally with shared-nothing or decoupled cloud-native architectures.
+- **Key Features**: Vectorized execution, MergeTree storage engine family, replication and sharding, multi-node scaling on Kubernetes via ClickHouse Operator.
+- **Tech Stack**: C++ (Apache-2.0 License).
+- **Elasticity Profile**: Worker pods scale horizontally across node pools; ClickHouse Cloud provides true compute-storage separation.
 
+### 2. [DuckDB](https://github.com/duckdb/duckdb) [![GitHub stars](https://img.shields.io/github/stars/duckdb/duckdb?style=social&color=white)](https://github.com/duckdb/duckdb/stargazers)
+- **Description**: High-performance in-process analytical SQL database management system. Often referred to as the "SQLite for Analytics", running serverlessly in ephemeral compute containers or Lambdas.
+- **Key Features**: Zero external dependencies, vectorized columnar query execution engine, native Parquet/Arrow/CSV streaming, direct querying over S3 object stores.
+- **Tech Stack**: C++ (MIT License).
+- **Elasticity Profile**: Employs an ultra-lightweight footprint suitable for scale-to-zero serverless lambdas and ephemeral batch workers.
 
+### 3. [Presto](https://github.com/prestodb/presto) [![GitHub stars](https://img.shields.io/github/stars/prestodb/presto?style=social&color=white)](https://github.com/prestodb/presto/stargazers)
+- **Description**: Distributed SQL query engine designed for running interactive analytical queries against data sources of all sizes ranging from gigabytes to petabytes.
+- **Key Features**: ANSI SQL compliance, connector architecture (Hive, Iceberg, Hudi, Cassandra, Kafka), multi-tenant coordinator-worker model, native Presto C++ (Velox) integration.
+- **Tech Stack**: Java, C++ (Apache-2.0 License / Linux Foundation).
+- **Elasticity Profile**: Worker pools scale elastically on Amazon EMR, Kubernetes, or self-hosted autoscaling clusters.
 
-- **ClickHouse**
+### 4. [Trino](https://github.com/trinodb/trino) [![GitHub stars](https://img.shields.io/github/stars/trinodb/trino?style=social&color=white)](https://github.com/trinodb/trino/stargazers)
+- **Description**: Fast distributed SQL query engine for big data analytics that queries data where it lives without data movement (formerly PrestoSQL).
+- **Key Features**: High-performance federated querying across object stores (S3, GCS, Azure Blob, MinIO), lakehouses (Iceberg, Delta Lake, Hudi), and RDBMS engines; native dynamic autoscaling on Kubernetes.
+- **Tech Stack**: Java (Apache-2.0 License).
+- **Elasticity Profile**: Decoupled compute cluster with horizontal autoscaling worker nodes, spot instance resilience, and Starburst Galaxy managed enterprise options.
 
-  **Column-oriented database for real-time analytics** (Apache 2.0) — **the fastest engine for single-table aggregation**, with **shared-nothing clusters** that scale horizontally. **Features**: **MergeTree engine family**; **vectorized execution**; **replication and sharding** for distributed deployments; **ClickHouse Cloud** adds compute-compute separation and scale-to-zero. **Tech stack**: C++. **Deploy**: Self-hosted clusters or ClickHouse Cloud. **Trade-off**: **Weak JOIN performance**; **not for high-frequency updates**; elastic scaling requires cluster management. **Best for**: log analytics and read-heavy aggregation where horizontal scaling is needed—especially when deployed on Kubernetes with auto-scaling node pools.
+### 5. [Apache Druid](https://github.com/apache/druid) [![GitHub stars](https://img.shields.io/github/stars/apache/druid?style=social&color=white)](https://github.com/apache/druid/stargazers)
+- **Description**: High-performance, real-time analytics database designed for fast streaming ingestion and sub-second ad-hoc OLAP queries on event-driven data.
+- **Key Features**: Multi-stage distributed architecture separating MiddleManager (ingestion), Historical (storage/caching), and Broker (query parsing/fan-out) processes; deep storage decoupling on S3/HDFS.
+- **Tech Stack**: Java (Apache-2.0 License).
+- **Elasticity Profile**: Historical and MiddleManager tiers scale independently and elastically depending on ingestion pressure and query concurrency.
 
+### 6. [Apache Doris](https://github.com/apache/doris) [![GitHub stars](https://img.shields.io/github/stars/apache/doris?style=social&color=white)](https://github.com/apache/doris/stargazers)
+- **Description**: Easy-to-use, high-performance MPP analytical database for real-time reporting, ad-hoc analysis, and unified lakehouse queries.
+- **Key Features**: Fully decoupled storage-and-compute architecture (Compute Nodes / Storage Engine), ANSI SQL compliance, sub-second latency for 10,000+ QPS, native MySQL wire protocol support.
+- **Tech Stack**: C++, Java (Apache-2.0 License).
+- **Elasticity Profile**: Stateless Compute Nodes (CN) scale up and down dynamically without data migration, reading persistent shared data directly from object stores.
 
+### 7. [StarRocks](https://github.com/StarRocks/starrocks) [![GitHub stars](https://img.shields.io/github/stars/StarRocks/starrocks?style=social&color=white)](https://github.com/StarRocks/starrocks/stargazers)
+- **Description**: Next-generation sub-second MPP database system built for multi-table join acceleration and lakehouse query analytics.
+- **Key Features**: Shared-data architecture, decoupled compute nodes (CN) with local NVMe caching, Multi-Catalog support for Apache Iceberg / Apache Hudi / Delta Lake, asynchronous materialized views.
+- **Tech Stack**: C++, Java (Apache-2.0 License / Linux Foundation).
+- **Elasticity Profile**: Elastic Compute Nodes can be spun up or scaled down in seconds based on query demand without storage reshuffling.
 
-- **Apache Doris**
+### 8. [Apache DataFusion](https://github.com/apache/datafusion) [![GitHub stars](https://img.shields.io/github/stars/apache/datafusion?style=social&color=white)](https://github.com/apache/datafusion/stargazers)
+- **Description**: Extensible, blazingly fast distributed SQL query engine and computing toolkit written in Rust, powered by Apache Arrow.
+- **Key Features**: Modular vectorized execution engine, native SIMD operations, memory safety without garbage collection pauses, foundational engine for modern distributed query stacks.
+- **Tech Stack**: Rust (Apache-2.0 License).
+- **Elasticity Profile**: Extremely light CPU and memory overhead; spins up instantly in ephemeral serverless workloads and containerized micro-engines.
 
-  **MPP analytical database** (Apache 2.0) — **the most balanced open-source MPP engine** for real-time and batch analytics, with **integrated or decoupled storage-compute** architectures. **Features**: **Decoupled storage-compute** for elastic scaling—compute nodes can be added or removed independently of storage; **sub-second latency** with 10,000+ QPS concurrency; **materialized views**; **MySQL protocol**. **Tech stack**: C++, Java. **Deploy**: Self-hosted (integrated or decoupled) or cloud. **Trade-off**: **Lake integration less mature than StarRocks**; decoupled architecture adds operational complexity. **Best for**: teams wanting elastic compute without sacrificing real-time analytics performance—especially those needing both batch and streaming workloads on one engine.
+### 9. [Velox](https://github.com/facebookincubator/velox) [![GitHub stars](https://img.shields.io/github/stars/facebookincubator/velox?style=social&color=white)](https://github.com/facebookincubator/velox/stargazers)
+- **Description**: High-performance C++ vectorized database acceleration library designed to unify and accelerate execution engines including Presto C++ and Apache Spark (Gluten).
+- **Key Features**: Arrow-compatible in-memory columnar processing, vectorized expression evaluation, optimized memory pooling, reusable composable execution pipeline.
+- **Tech Stack**: C++ (Apache-2.0 License).
+- **Elasticity Profile**: Embeddable acceleration layer that inherits the dynamic scaling elasticity of the hosting distributed framework.
 
-
-
-- **StarRocks**
-
-  **High-performance MPP database** (Apache 2.0, Linux Foundation) — **the performance leader for multi-table joins and lakehouse queries**, with **shared-data architecture** for elastic compute. **Features**: **Shared-data mode**—compute nodes (CN) cache hot data while object storage holds persistence, enabling independent compute scaling; **Multi-Catalog** reads Iceberg/Hudi/Delta directly; **asynchronous materialized views**. **Tech stack**: C++, Java. **Deploy**: Self-hosted (shared-nothing or shared-data). **Trade-off**: **Acceleration layer, not source of truth**; elastic scaling in shared-data mode requires object storage configuration. **Best for**: teams with lakehouse architecture needing elastic compute for join-heavy BI queries—especially those wanting independent scaling of compute and storage.
-
-
-
-- **Velox**
-
-  **C++ vectorized execution engine** (Apache 2.0) — **the execution layer that makes Presto and Spark faster**, with **elastic scaling inherited from the host engine**. **Features**: **Vectorized execution** for modern CPUs; **connector architecture**; **used by Presto C++** (Velox-Presto) and **Spark's Photon**; **native performance** for single-node workloads. **Tech stack**: C++. **Deploy**: Embedded in host engines. **Trade-off**: **Execution library, not a complete engine**—you need Presto or Spark for SQL parsing, planning, and cluster management. **Best for**: teams wanting native-speed execution within their existing Presto or Spark deployments.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Apache Druid** — Real-time analytics database (Apache 2.0). Time-series optimized with sub-second queries; elastic scaling via historical and broker nodes. **Note**: Specialized for event data, not general-purpose warehouse. **Best for**: operational dashboards on streaming data.
-
-- **Apache Pinot** — Real-time distributed OLAP datastore (Apache 2.0). Powering user-facing analytics at LinkedIn and Uber; sub-second queries at high concurrency. **Note**: Operational complexity for elastic scaling. **Best for**: user-facing analytics needing millisecond latency.
-
-
-
-**Frameworks for building custom systems**: Combine **Trino** for federated query with **ClickHouse** for real-time aggregation and **Apache Doris** for decoupled storage-compute—creating an elastic query stack on Kubernetes. **None of these match Snowflake's managed per-second billing or BigQuery's serverless slots**, but for teams willing to operate infrastructure, the engines are production-proven at scale.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, license (for open-source), and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Elastic compute platforms handling enterprise data must comply with data protection regulations (GDPR, CCPA, etc.) and implement appropriate access controls.
-
-- **The "managed virtual warehouse" vs. "concurrency scaling" vs. "serverless compute" vs. "slot-based" vs. "self-hosted elastic engine" distinction is critical.** **Snowflake** provides **independent virtual warehouses**—workloads are fully isolated but you pay for running warehouses even when idle . **Redshift Concurrency Scaling** adds **automatic clusters** for concurrent queries, with 1 hour/day free . **Databricks SQL Serverless** is **fully managed serverless** at **$0.70/DBU** . **BigQuery Slots** are **capacity units** with break-even above 50 slots . **Firebolt** offers **per-second billing with scale-to-zero** . **Starburst Galaxy** provides **managed Trino clusters** with 3 free clusters . **Self-hosted engines (Trino, ClickHouse, Doris, StarRocks)** require **Kubernetes or cloud infrastructure** for elasticity. **Choose based on whether you need managed per-second billing, automatic concurrency scaling, serverless simplicity, or self-hosted control.**
-
-- **Snowflake's oversizing risk is the most expensive mistake.** An X-Large costs **4× a Medium** for the same schedule—**8 hours/day of X-Large at Standard costs ~$7,680/month vs. ~$1,920 for Medium** . **Monitor warehouse sizing weekly.**
-
-- **Redshift Concurrency Scaling's 1 hour/day free** covers **97% of customers**—if your spikes are infrequent, you may never pay . **If you have sustained high concurrency, model the overage.**
-
-- **BigQuery's break-even is 50 slots.** At **$0.06/slot-hour on Enterprise**, 100 slots running continuously costs **~$4,380/month**, roughly equivalent to scanning **700 TiB on-demand** . **Query `INFORMATION_SCHEMA.JOBS` for actual slot-milliseconds before committing.**
-
-- **Firebolt's scale-to-zero is genuine**—compute bills per second and stops when idle . **The trade-off**: storage costs continue at object storage rates.
-
-- **Starburst Galaxy's 3 free clusters** are the most generous managed Trino offering . **Pro at $0.50/credit** is competitive for production.
-
-- **ClickHouse Cloud's compute unit pricing** requires sizing modeling—**1 unit = 8 GiB RAM + 2 vCPU**, billed per minute .
-
-- Self-hosted open-source solutions require proper infrastructure (Kubernetes for elastic scaling, object storage for shared-data architectures), security hardening, and ongoing maintenance. **Elastic compute clusters execute against production data**—ensure your deployment meets your organization's security and performance requirements before migrating production workloads.
-
-
+### 10. [Apache Pinot](https://github.com/apache/pinot) [![GitHub stars](https://img.shields.io/github/stars/apache/pinot?style=social&color=white)](https://github.com/apache/pinot/stargazers)
+- **Description**: Real-time distributed OLAP datastore purpose-built to execute low-latency analytical queries at ultra-high concurrency (e.g., LinkedIn and Uber user-facing analytics).
+- **Key Features**: Columnar storage with pluggable indices (Star-Tree, inverted, range), real-time stream ingestion from Kafka/Kinesis, distributed broker-server architecture.
+- **Tech Stack**: Java (Apache-2.0 License).
+- **Elasticity Profile**: Segment store decoupled from query brokers; scales dynamically on Kubernetes to handle peak concurrency spikes.
 
 ---
 
+## 📈 Star History
 
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Elastic-Data-Warehouse-Compute&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Elastic-Data-Warehouse-Compute&type=date&legend=top-left)
 
-**Made for data engineers, platform architects, and organizations building transparent elastic compute solutions.**
+---
 
-Let's make Elastic Data Warehouse Compute more open, data-driven, and elasticity-aware.
+## 🤝 How to Contribute
+
+Contributions are warmly welcomed! Help keep this awesome repository up-to-date and comprehensive:
+
+1. 🍴 **Fork the repository** on GitHub.
+2. 🌿 **Create a new branch** (`git checkout -b feature/new-engine-addition`).
+3. 📝 **Add or update an entry** in `README.md`:
+   - Follow the established formatting conventions (include name, category, GitHub link, star count badge, starting price, free tier limit, and elasticity profile).
+   - Ensure descriptions are strictly factual and concise.
+4. 🚀 **Submit a Pull Request** with a brief summary of the addition or update.
+
+---
+
+## 💖 Support & Sponsorship
+
+If you find **Awesome-Elastic-Data-Warehouse-Compute** valuable for your data engineering team, architectural benchmarking, or research:
+
+- ⭐ **Star this repository** to show your appreciation!
+- 🍴 **Fork and share** with colleagues and data engineering communities.
+- ☕ **Buy me a coffee & support ongoing maintenance:** Visit the [Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Your sponsorship helps keep this catalog verified, active, and regularly updated with the latest industry pricing and engine releases!
+
+---
+
+## ⚖️ Disclaimer
+
+- This is a **community-curated** list — non-exhaustive, educational, and not an endorsement of specific commercial vendors.
+- **Enterprise Security & Compliance:** Data warehouse clusters processing enterprise analytics must comply with relevant privacy regulations (GDPR, HIPAA, CCPA) and enforce RBAC/credential boundaries.
+- **Architectural Trade-offs**:
+  - **Snowflake Virtual Warehouses:** Complete workload isolation with per-second billing; beware oversizing risks (an X-Large costs 4× a Medium).
+  - **Amazon Redshift Concurrency Scaling:** 1 free hour/day per cluster handles query spikes for ~97% of workloads; sustained spikes trigger on-demand overages.
+  - **Google BigQuery Slots:** Serverless autoscaling with fixed slot commitments; break-even is typically above 50 slots compared to on-demand data scanning.
+  - **Databricks SQL Serverless:** Fully managed lakehouse compute with rapid spin-up; DBU consumption tracks query complexity.
+  - **Open-Source Engines (ClickHouse, Trino, Doris, StarRocks):** True elasticity is achieved via orchestration (Kubernetes HPA, node autoscalers, cloud instance groups). Choose open-source when self-hosting and direct control over infrastructure is paramount.
+
+---
+
+<p align="center">
+  <b>Built for Data Engineers, Lakehouse Architects, and Infrastructure Teams worldwide.</b><br>
+  <sub>Let's build more transparent, elastic, and cost-effective data warehousing systems.</sub>
+</p>
